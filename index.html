@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MMW — Makers Modular Workstations</title>
 
+  <!-- Pacifico Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   <style>
     /* Global */
     body {
@@ -12,12 +15,14 @@
       font-family: Arial, sans-serif;
       background: #f7f7f7;
       color: #222;
+      line-height: 1.5;
     }
 
     /* Header + Navigation */
     header {
       background: #4A6FA5;
       padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
     nav {
@@ -27,7 +32,7 @@
     }
 
     .logo-img {
-      height: 224px;
+      height: 192px;
       width: auto;
     }
 
@@ -51,22 +56,40 @@
       border-color: #FFFFFF;
     }
 
-    /* Hero Section */
+    /* HERO */
     .hero {
-      background: #0A1A2F;
-      color: white;
+      background: rgba(180,185,195,0.55);
       text-align: center;
-      padding: 60px 20px;
+      padding: 48px 20px;
     }
 
     .hero h1 {
-      font-size: 24px;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.55rem;
+      color: #2A3F55;
       margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 20px;
-      margin-top: 0;
+      font-size: 1rem;
+      max-width: 750px;
+      margin: 0 auto 20px auto;
+      color: #333;
+    }
+
+    /* Bullet list inside HERO */
+    .hero-bullets {
+      list-style-type: disc;
+      text-align: left;
+      max-width: 750px;
+      margin: 0 auto;
+      padding-left: 20px;
+      color: #333;
+    }
+
+    .hero-bullets li {
+      margin-bottom: 10px;
+      line-height: 1.4;
     }
 
     /* Sections */
@@ -104,7 +127,6 @@
       color: white;
     }
   </style>
-
 </head>
 
 <body>
@@ -127,18 +149,23 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero">
-    <h1> 
-• Community —  Created with makers and for makers, MMW designs are openly shared, clearly documented, and built to encourage collaboration and remixing.
-<h1.1>
-• Modularity — Every component integrates cleanly into a larger system.
-<h1.2>
-• Accessibility — Designs are printable, remixable, and easy to build.
-<h1.3>
-• Precision — MMW delivers practical, maker‑driven engineering designed to improve workflow, accuracy, and real‑world usability.
-<h1.4>
-• Scalability — A workstation ecosystem that grows with the maker’s needs. </p>
+    <h1>Makers Modular Workstations</h1>
+
+    <p>
+      MMW is shaped by a community of creators who believe in modularity, openness, and shared problem‑solving.
+      Every workstation, mount, and tool is refined through real workflows and real experience — designed to grow
+      with you, and with the people who inspire your next project.
+    </p>
+
+    <ul class="hero-bullets">
+      <li><strong>Community</strong> — Created with makers and for makers, MMW designs are openly shared, clearly documented, and built to encourage collaboration and remixing.</li>
+      <li><strong>Modularity</strong> — Every component integrates cleanly into a larger system.</li>
+      <li><strong>Accessibility</strong> — Designs are printable, remixable, and easy to build.</li>
+      <li><strong>Precision</strong> — MMW delivers practical, maker‑driven engineering designed to improve workflow, accuracy, and real‑world usability.</li>
+      <li><strong>Scalability</strong> — A workstation ecosystem that grows with the maker’s needs.</li>
+    </ul>
   </section>
 
   <!-- Featured Workstations -->
@@ -176,4 +203,3 @@
 
 </body>
 </html>
-  
