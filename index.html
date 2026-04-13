@@ -24,7 +24,7 @@
       padding: 0 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 
-      /* Expand height to match 250px logo */
+      /* Match 250px logo height */
       height: 250px;
       display: flex;
       align-items: center;
@@ -46,22 +46,29 @@
       width: auto;
     }
 
-    /* Navigation on two lines */
+    /* Navigation block */
     .nav-links {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       padding-left: 40px;
     }
 
+    /* Base nav row styling */
     .nav-row {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
     }
 
+    /* ⭐ Stagger effect */
+    .nav-row-2 {
+      padding-left: 40px; /* shift second row right */
+    }
+
+    /* Nav link styling */
     .nav-row a {
       color: #FFFFFF;
       text-decoration: none;
@@ -154,14 +161,15 @@
         <img src="/MMW-website/assets/IMG_0250.jpeg" alt="MMW Logo" class="logo-img">
       </div>
 
-      <!-- Two-Line Navigation -->
+      <!-- Two-Line, Staggered Navigation -->
       <div class="nav-links">
-        <div class="nav-row">
+        <div class="nav-row nav-row-1">
           <a href="#">Home</a>
           <a href="#">Workstations</a>
           <a href="#">Modules</a>
         </div>
-        <div class="nav-row">
+
+        <div class="nav-row nav-row-2">
           <a href="#">Ecosystem</a>
           <a href="#">About</a>
           <a href="#">Downloads</a>
