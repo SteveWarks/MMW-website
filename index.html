@@ -25,23 +25,40 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
-    nav {
+    /* Split navigation layout */
+    .nav-split {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    /* Left and right nav groups */
+    .nav-left,
+    .nav-right {
+      display: flex;
+      gap: 20px;
+      z-index: 2; /* ensures links stay clickable around centered logo */
+    }
+
+    /* Centered logo */
+    .logo-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
     }
 
     .logo-img {
-      height: 250px;
+      height: 250px; /* increased by 30% */
       width: auto;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav-links a {
+    /* Nav link styling */
+    .nav-left a,
+    .nav-right a {
       color: #FFFFFF;
       text-decoration: none;
       font-weight: bold;
@@ -51,7 +68,8 @@
       transition: background 0.2s ease, border-color 0.2s ease;
     }
 
-    .nav-links a:hover {
+    .nav-left a:hover,
+    .nav-right a:hover {
       background: rgba(255, 255, 255, 0.18);
       border-color: #FFFFFF;
     }
@@ -60,9 +78,7 @@
     .hero {
       background: rgba(180,185,195,0.55);
       text-align: center;
-
-      /* 30% compressed height */
-      padding: 14px 20px;
+      padding: 14px 20px; /* 30% compressed */
     }
 
     .hero h1 {
@@ -128,19 +144,24 @@
 
   <!-- Navigation -->
   <header>
-    <nav>
-      <div class="logo">
-        <img src="/MMW-website/assets/IMG_0250.jpeg" alt="MMW Logo" class="logo-img">
-      </div>
+    <nav class="nav-split">
 
-      <div class="nav-links">
+      <div class="nav-left">
         <a href="#">Home</a>
         <a href="#">Workstations</a>
         <a href="#">Modules</a>
+      </div>
+
+      <div class="logo-center">
+        <img src="/MMW-website/assets/IMG_0250.jpeg" alt="MMW Logo" class="logo-img">
+      </div>
+
+      <div class="nav-right">
         <a href="#">Ecosystem</a>
         <a href="#">About</a>
         <a href="#">Downloads</a>
       </div>
+
     </nav>
   </header>
 
