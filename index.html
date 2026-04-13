@@ -21,44 +21,48 @@
     /* Header + Navigation */
     header {
       background: #4A6FA5;
-      padding: 10px 20px;
+      padding: 0 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
 
-    /* Split navigation layout */
-    .nav-split {
+      /* Expand height to match 250px logo */
+      height: 250px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      position: relative;
-      padding-top: 10px;
-      padding-bottom: 10px;
     }
 
-    /* Left and right nav groups */
-    .nav-left,
-    .nav-right {
+    .nav-container {
       display: flex;
-      gap: 20px;
-      z-index: 2; /* ensures links stay clickable around centered logo */
+      align-items: center;
+      width: 100%;
     }
 
-    /* Centered logo */
-    .logo-center {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 0;
+    /* Logo left */
+    .logo-area {
+      flex: 0 0 auto;
     }
 
     .logo-img {
-      height: 250px; /* increased by 30% */
+      height: 250px; /* 30% increase */
       width: auto;
     }
 
-    /* Nav link styling */
-    .nav-left a,
-    .nav-right a {
+    /* Navigation on two lines */
+    .nav-links {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      padding-left: 40px;
+    }
+
+    .nav-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-row a {
       color: #FFFFFF;
       text-decoration: none;
       font-weight: bold;
@@ -68,8 +72,7 @@
       transition: background 0.2s ease, border-color 0.2s ease;
     }
 
-    .nav-left a:hover,
-    .nav-right a:hover {
+    .nav-row a:hover {
       background: rgba(255, 255, 255, 0.18);
       border-color: #FFFFFF;
     }
@@ -78,7 +81,7 @@
     .hero {
       background: rgba(180,185,195,0.55);
       text-align: center;
-      padding: 14px 20px; /* 30% compressed */
+      padding: 14px 20px; /* compressed */
     }
 
     .hero h1 {
@@ -144,25 +147,28 @@
 
   <!-- Navigation -->
   <header>
-    <nav class="nav-split">
+    <div class="nav-container">
 
-      <div class="nav-left">
-        <a href="#">Home</a>
-        <a href="#">Workstations</a>
-        <a href="#">Modules</a>
-      </div>
-
-      <div class="logo-center">
+      <!-- Logo Left -->
+      <div class="logo-area">
         <img src="/MMW-website/assets/IMG_0250.jpeg" alt="MMW Logo" class="logo-img">
       </div>
 
-      <div class="nav-right">
-        <a href="#">Ecosystem</a>
-        <a href="#">About</a>
-        <a href="#">Downloads</a>
+      <!-- Two-Line Navigation -->
+      <div class="nav-links">
+        <div class="nav-row">
+          <a href="#">Home</a>
+          <a href="#">Workstations</a>
+          <a href="#">Modules</a>
+        </div>
+        <div class="nav-row">
+          <a href="#">Ecosystem</a>
+          <a href="#">About</a>
+          <a href="#">Downloads</a>
+        </div>
       </div>
 
-    </nav>
+    </div>
   </header>
 
   <!-- HERO -->
