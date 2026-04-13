@@ -15,17 +15,32 @@
 
     /* Navigation */
 header {
-  background: #4A6FA5;
-  color: #FFFFFF;
-  padding: 20px;
+  background: #4A6FA5; /* your new color */
+  padding: 10px 20px;
 }
 
-nav a {
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  height: 64px; /* or whatever size you like */
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
   color: #FFFFFF;
-  margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
 }
+
 
 
     nav a {
