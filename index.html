@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MMW — Makers Modular Workstations</title>
 
   <style>
+    /* Global */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,65 +14,41 @@
       color: #222;
     }
 
-    /* Navigation */
-header {
-  background: #4A6FA5; /* your new color */
-  padding: 10px 20px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo-img {
-  height: 64px; /* or whatever size you like */
-  width: auto;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 16px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 6px;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-
-.nav-links a:hover {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: #FFFFFF;
-}
-
-
-
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    } 
-
-    /* Logo */
-    .logo-img {
-      height: 192px;
-      width: auto;
-      object-fit: contain;
-      display: block;
+    /* Header + Navigation */
+    header {
+      background: #4A6FA5;
+      padding: 10px 20px;
     }
-    nav a {
-      color: white;
-      margin-left: 20px;
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-img {
+      height: 64px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #FFFFFF;
       text-decoration: none;
       font-weight: bold;
+      padding: 8px 16px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 6px;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: #FFFFFF;
     }
 
     /* Hero Section */
@@ -79,45 +56,42 @@ nav {
       background: #4A6FA5;
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
 
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
 
-.hero h1 {
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 14px;
-  line-height: 1.2;
-}
-
-.hero p {
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
+    .hero p {
+      font-size: 20px;
+      margin-top: 0;
+    }
 
     /* Sections */
     .section {
-      max-width: 1100px;
-      margin: 50px auto;
-      padding: 0 20px;
+      padding: 40px 20px;
+      text-align: center;
     }
+
     .cards {
       display: flex;
+      justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
+      margin-top: 20px;
     }
+
     .card {
       background: white;
       padding: 20px;
-      border-radius: 8px;
-      flex: 1;
-      min-width: 280px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
     }
+
     .card h3 {
       margin-top: 0;
     }
@@ -131,7 +105,6 @@ nav {
     }
   </style>
 
-  
 </head>
 
 <body>
@@ -141,10 +114,9 @@ nav {
     <nav>
       <div class="logo">
         <img src="/MMW-website/assets/IMG_0250.jpeg" alt="MMW Logo" class="logo-img">
-
       </div>
 
-      <div>
+      <div class="nav-links">
         <a href="#">Home</a>
         <a href="#">Workstations</a>
         <a href="#">Modules</a>
@@ -157,10 +129,9 @@ nav {
 
   <!-- Hero -->
   <section class="hero">
-  <h1>Build Your Workspace. Build Your Workflow.</h1>
-  <p>Every tool in its place. Every maker in control.</p>
-</section>
-
+    <h1>Build Your Workspace. Build Your Workflow.</h1>
+    <p>Every tool in its place. Every maker in control.</p>
+  </section>
 
   <!-- Featured Workstations -->
   <section class="section">
