@@ -27,7 +27,7 @@
     }
 
     .logo-img {
-      height: 160px;   /* Increased size for stronger visual impact */
+      height: 160px;   /* Strong visual presence */
       width: auto;
     }
 
@@ -53,7 +53,13 @@
 
     /* Hero Section */
     .hero {
-      background: #0A1A2F;
+      background:
+        linear-gradient(rgba(10, 26, 47, 0.90), rgba(10, 26, 47, 0.90)),
+        url('/MMW-website/assets/mmw-workstation-blur.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
       color: white;
       text-align: center;
       padding: 30px 20px;   /* Reduced height */
@@ -154,3 +160,34 @@
   <section class="section">
     <h2>Featured Workstations</h2>
     <div class="cards">
+      <div class="card">
+        <h3>K2PW — K2 Pro Workstation</h3>
+        <p>High‑efficiency modular platform with universal mounting and support‑free printability.</p>
+      </div>
+      <div class="card">
+        <h3>DPPW — Drill Press Pro Workstation</h3>
+        <p>Precision‑focused workstation with modular risers, drawers, and accessory mounts.</p>
+      </div>
+      <div class="card">
+        <h3>Future Workstations</h3>
+        <p>New platforms and modules are actively in development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem Overview -->
+  <section class="section">
+    <h2>The MMW Ecosystem</h2>
+    <p>
+      MMW is built on a consistent design language: modularity, clarity, and printability.
+      Every module integrates seamlessly into a flexible, scalable workspace.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 MMW — Makers Modular Workstations
+  </footer>
+
+</body>
+</html>
