@@ -128,3 +128,11 @@ footer {
     border-radius: 8px;
     margin-bottom: 12px;
 }
+/* Workstation image sizing */
+.workstation-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
