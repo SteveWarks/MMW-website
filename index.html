@@ -1,83 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/MMW-website/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MMW — Makers Modular Workstations</title>
+
+  <!-- Elfia Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Elfia&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    /* Header + Navigation */
+    header {
+      background: #4A6FA5;
+      padding: 0 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      height: 250px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .logo-area {
+      flex: 0 0 auto;
+    }
+
+    .logo-img {
+      height: 250px;
+      width: auto;
+    }
+
+    /* Navigation — now single row */
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 6px;
+      transition: background 0.2s ease, border-color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: #FFFFFF;
+    }
+
+    /* HERO */
+    .hero {
+      background: rgba(180,185,195,0.55);
+      text-align: center;
+      padding: 14px 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Elfia', cursive;
+      font-size: 1.55rem;
+      color: #2A3F55;
+      margin-bottom: 8px;
+    }
+
+    .hero-bullets {
+      list-style-type: disc;
+      max-width: 750px;
+      margin: 0 auto;
+      padding-left: 20px;
+      color: #333;
+      text-align: left;
+    }
+
+    .hero-bullets li {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    /* Sections */
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      background: #111;
+      color: white;
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <header class="header">
-    <div class="logo">MMW</div>
-    <nav class="nav">
-      <a href="#mission">Mission</a>
-      <a href="#workstations">Workstations</a>
-      <a href="#community">Community</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <div class="nav-container">
+
+      <!-- Logo Left -->
+      <div class="logo-area">
+        <img src="/MMW-website/assets/IMG_0250.jpeg" alt="MMW Logo" class="logo-img">
+      </div>
+
+      <!-- Single Row Navigation -->
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Workstations</a>
+        <a href="#">Modules</a>
+        <a href="#">Ecosystem</a>
+        <a href="#">Downloads</a>
+      </nav>
+
+    </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Makers Modular Workstations</h1>
-    <p class="hero-subtitle">
-      A modular ecosystem designed for makers, engineers, and creators who need adaptable, efficient, and expandable workstations.
-    </p>
-  </section>
+    <h1>Modular Systems for Makers and 3D Hobbyists</h1>
 
-  <!-- Mission -->
-  <section id="mission" class="section">
-    <h2>Our Mission</h2>
-    <p>
-      MMW builds modular, scalable workstation platforms that evolve with your tools, your workflow, and your creativity.
-      Every workstation is designed with precision, durability, and expandability at its core.
-    </p>
+    <ul class="hero-bullets">
+      <li>Modular workstation systems that enhance workflow performance — with each module improving its task, supporting the next, and strengthening the entire process.</li>
+    </ul>
   </section>
 
   <!-- Featured Workstations -->
-  <section id="workstations" class="section">
+  <section class="section">
     <h2>Featured Workstations</h2>
-
     <div class="cards">
 
-      <div class="card">
-        <img src="/MMW-website/images/IMG_0284.jpeg" alt="K2PW Workstation" class="card-img">
-        <h3>K2PW — K2 Pro Workstation</h3>
-        <p>High‑efficiency modular platform with universal mounting and support‑free printability.</p>
-      </div>
+<section class="section">
+  <h2>Featured Workstations</h2>
 
-      <div class="card">
-        <img src="/MMW-website/images/IMG_0172.jpeg" alt="DPPW Workstation" class="card-img">
-        <h3>DPPW — Drill Press Pro Workstation</h3>
-        <p>Precision‑focused workstation with modular risers, drawers, and accessory mounts.</p>
-      </div>
+  <div class="cards">
 
-      <div class="card">
-        <img src="/MMW-website/images/future.jpg" alt="Future Workstations" class="card-img">
-        <h3>Future Workstations</h3>
-        <p>New platforms and modules are actively in development.</p>
-      </div>
-
+    <div class="card">
+      <img src="/MMW-website/assets/k2pw.jpg" alt="K2PW Workstation" class="card-img">
+      <h3>K2PW — K2 Pro Workstation</h3>
+      <p>High‑efficiency modular platform with universal mounting and support‑free printability.</p>
     </div>
-  </section>
 
-  <!-- Community -->
-  <section id="community" class="section">
-    <h2>Community</h2>
-    <p>
-      MMW is built with and for the maker community. Your feedback shapes every workstation, module, and design iteration.
-      Join us as we continue to expand the ecosystem.
-    </p>
-  </section>
+    <div class="card">
+      <img src="/MMW-website/assets/dppw.jpg" alt="DPPW Workstation" class="card-img">
+      <h3>DPPW — Drill Press Pro Workstation</h3>
+      <p>Precision‑focused workstation with modular risers, drawers, and accessory mounts.</p>
+    </div>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>For inquiries, collaborations, or project discussions, reach out at: <strong>info@mmw.dev</strong></p>
-  </section>
+    <div class="card">
+      <img src="/MMW-website/assets/future.jpg" alt="Future Workstations" class="card-img">
+      <h3>Future Workstations</h3>
+      <p>New platforms and modules are actively in development.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    © 2026 MMW — Makers Modular Workstations
+  </footer>
 
 </body>
 </html>
