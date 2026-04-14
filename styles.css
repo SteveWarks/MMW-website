@@ -105,9 +105,10 @@ section h2 {
 }
 .workstation-image {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 /* ------------------------------
