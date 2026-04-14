@@ -13,12 +13,26 @@ body {
     color: #222;
     line-height: 1.6;
 }
+.nav-container {
+    display: flex;
+    justify-content: space-between;  /* logo left, nav right */
+    align-items: center;
+    width: 100%;
+    padding: 16px 32px;
+}
+
 .nav-links {
     display: flex;
-    justify-content: center;   /* centers the nav buttons */
-    gap: 20px;                 /* optional: spacing between buttons */
-    width: 100%;
+    gap: 20px;                       /* spacing between links */
 }
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
 
 /* ============= NAVIGATION ============= */
 
