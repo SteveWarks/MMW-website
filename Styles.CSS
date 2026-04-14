@@ -1,1 +1,94 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f7f7f7;
+    color: #222;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* NAVIGATION */
+.nav {
+    background: #111;
+    padding: 15px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #00aaff;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* SECTION HEADERS */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* FEATURED WORKSTATIONS */
+.featured, .future, .ecosystem {
+    padding: 50px 20px;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.workstation {
+    margin-bottom: 25px;
+}
+
+.workstation h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.workstation p {
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
 
