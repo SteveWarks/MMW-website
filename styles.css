@@ -22,7 +22,7 @@ body {
     display: flex;
     align-items: center;      /* vertical centering */
     justify-content: center;  /* keeps nav centered */
-    padding: 20px 0;
+    padding: 40px 0;
     background-color: #2A3F55;
     color: white;
     position: relative;       /* required for absolute logo */
