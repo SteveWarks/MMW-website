@@ -207,10 +207,54 @@ body {
 
 .section-divider {
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
     margin: 40px 0;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     opacity: 0.6;
+}
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.about-section {
+  margin-bottom: 60px;
+}
+
+.about-section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.about-section p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.about-values {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-values li {
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
