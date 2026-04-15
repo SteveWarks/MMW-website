@@ -116,9 +116,9 @@ section h2 {
 }
 .workstation-image {
     width: 100%;
-    height: auto;
+    height: 220px;
     max-height: 140px;     /* ← SHRINKS the image */
-    object-fit: contain;   /* ← NO CROPPING */
+    object-fit:cover;   /* ← NO CROPPING */
     border-radius: 8px;
     margin-bottom: 12px;
 }
