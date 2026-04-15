@@ -34,6 +34,12 @@ body {
     font-size: 42px;
     margin-bottom: 10px;
 }
+.logo {
+    position: absolute;
+    left: 20px;        /* controls how close to the left edge */
+    display: flex;
+    align-items: center;
+}
 
 .nav-links {
     list-style: none;
