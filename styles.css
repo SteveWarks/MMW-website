@@ -18,22 +18,29 @@ body {
 /* ------------------------------
    HEADER & NAVIGATION
 ------------------------------ */
-
 .header {
-    width: 100%;
+    display: flex;
+    align-items: center;      /* vertical centering */
+    justify-content: center;  /* keeps nav centered */
     padding: 20px 0;
     background-color: #2A3F55;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;       /* required for absolute logo */
 }
 
 .logo {
-    font-family: 'Elfia', serif;
-    font-size: 42px;
-    margin-bottom: 10px;
+    position: absolute;
+    left: 20px;               /* left‑justify */
+    display: flex;
+    align-items: center;      /* vertical centering */
 }
+
+.logo img {
+    height: 64px;             /* adjust size here */
+    width: auto;
+    display: block;
+}
+
 
 
 .nav-links {
