@@ -1,136 +1,155 @@
 /* ------------------------------
-   GLOBAL RESET & BASE
---------------------------------*/
+   GLOBAL RESET & BASE STYLES
+------------------------------ */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #f4f4f4;
-    color: #222;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1a1a1a;
     line-height: 1.6;
 }
-.nav-container {
-    display: flex;
-    justify-content: space-between;  /* logo left, nav right */
-    align-items: center;
+
+/* ------------------------------
+   HEADER & NAVIGATION
+------------------------------ */
+
+.header {
     width: 100%;
-    padding: 16px 32px;
+    padding: 20px 0;
+    background-color: #2A3F55;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Elfia', serif;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
 .nav-links {
+    list-style: none;
     display: flex;
-    gap: 20px;                       /* spacing between links */
+    gap: 30px;
 }
 
 .nav-links a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 18px;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
 }
 
 /* ------------------------------
-   HERO BAND
---------------------------------*/
+   HERO SECTION
+------------------------------ */
+
 .hero {
-  background: #B4B9C3;   /* Steel Gray */
-  padding: 60px 20px 40px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #4A6FA5 0%, #2A3F55 100%);
+    color: white;
 }
 
-
 .hero h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: #111;
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    max-width: 900px;
-    margin: 0 auto;
-    color: #444;
-    line-height: 1.7;
+    font-size: 20px;
+    opacity: 0.9;
 }
 
 /* ------------------------------
-   SECTION WRAPPERS
---------------------------------*/
-section {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 40px 30px;
-    background: #fff;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
+   SECTION TITLES
+------------------------------ */
 
-section h2 {
-    font-size: 1.9rem;
-    margin-bottom: 25px;
+.section-title {
     text-align: center;
-    font-weight: 700;
+    font-size: 32px;
+    margin: 50px 0 30px;
+    color: #2A3F55;
 }
 
 /* ------------------------------
-   WORKSTATION CARDS
---------------------------------*/
-.workstation {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+   WORKSTATION GRID & CARDS
+------------------------------ */
+
+.workstation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px 60px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.workstation:last-child {
-    border-bottom: none;
+.workstation-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.workstation h3 {
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-    font-weight: 700;
+.workstation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.workstation p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.card-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-.workstation-card img {
-    width: 100%;
-    height: 100px;      /* tweak this number to taste */
-    object-fit: cover;  /* fills the box, crops instead of stretching */
-    display: block;
-    border-radius: 8px; /* optional, if you want rounded corners */
-}
 .workstation-image {
     width: 100%;
     height: 220px;
-    max-height: 140px;     /* ← SHRINKS the image */
-    object-fit:cover;   /* ← NO CROPPING */
+    object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.workstation-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2A3F55;
+}
+
+.workstation-card p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* ------------------------------
+   ABOUT SECTION
+------------------------------ */
+
+.about-section {
+    max-width: 900px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
 }
 
 /* ------------------------------
    FOOTER
---------------------------------*/
-footer {
+------------------------------ */
+
+.footer {
     text-align: center;
-    padding: 40px 20px;
-    color: #666;
-    font-size: 0.9rem;
+    padding: 20px;
+    background-color: #2A3F55;
+    color: white;
+    font-size: 16px;
 }
-
-
