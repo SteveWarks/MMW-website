@@ -74,6 +74,7 @@ body {
 .hero h1 {
     font-size: 36px;
     margin-bottom: 15px;
+   text-decoration: none;
 }
 
 .hero p {
