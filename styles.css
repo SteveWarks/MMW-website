@@ -77,11 +77,10 @@ body {
    text-decoration: none;
    color: inherit;
 }
-
 .hero p {
     font-size: 20px;
     opacity: 0.9;
-   text-align: left;
+    text-align: left;
 }
 
 /* ------------------------------
