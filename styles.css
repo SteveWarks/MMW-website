@@ -80,13 +80,14 @@ body {
 .hero p {
     font-size: 20px;
     opacity: 0.9;
-    text-align: left;
+    text-align: center;
 }
 
 .hero p1 {
     font-size: 20px;
     opacity: 0.9;
     text-align: left;
+   margin: 20px 20px;
 }
 /* ------------------------------
    SECTION TITLES
