@@ -165,13 +165,13 @@ body {
    FOOTER
 ------------------------------ */
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2A3F55;
-    color: white;
-    font-size: 16px;
+.footer p {
+    font-size: 18px;          /* change size */
+    letter-spacing: 1.5px;      /* spacing between letters */
+    font-family: Pacifico; /* or any font */
+    margin: 0;                /* remove extra spacing */
 }
+
 /* ================================
    ABOUT PAGE STYLES
    ================================ */
